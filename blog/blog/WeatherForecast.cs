@@ -12,4 +12,5 @@ namespace blog
 
         public string Summary { get; set; }
     }
+
 }

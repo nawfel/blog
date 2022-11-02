@@ -12,3 +12,5 @@ namespace blog.repository
         public Task<ApplicationUserIdentity> GetByUsernameAsync(string normalizedname, CancellationToken cancellationToken);
     }
 }
+
+
