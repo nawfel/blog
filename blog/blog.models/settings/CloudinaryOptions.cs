@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace blog.models.settings
 {
-    internal class CloudinaryOptions
+    public class CloudinaryOptions
     {
         public string CloudName { get; set; }
         public string ApiKey { get; set; }

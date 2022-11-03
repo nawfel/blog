@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace blog.models.photo
 {
-    internal class Photo:PhotoCreate
+    public class Photo:PhotoCreate
     {
         public int PhotoId { get; set; }
         public int ApplicationUserId { get; set; }

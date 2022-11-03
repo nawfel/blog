@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace blog.models.exceptions
 {
-    internal class ApiException
+    public class ApiException
     {
         public int StatusCode { get; set; }
         public string Message { get; set; }

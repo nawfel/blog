@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace blog.models.blog
 {
-    internal class BlogCreate
+    public class BlogCreate
     {
         public int BlogId { get; set; }
 

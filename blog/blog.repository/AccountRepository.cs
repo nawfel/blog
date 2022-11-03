@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace blog.repository
 {
-    internal class AccountRepository : IAccountRepository
+    public class AccountRepository : IAccountRepository
     {
         private readonly IConfiguration _config;
         public AccountRepository(IConfiguration config)

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace blog.models.blog
 {
-    internal class BlogPaging
+    public class BlogPaging
     {
-        public int PAge { get; set; } = 1;
+        public int Page { get; set; } = 1;
         public int PageSize { get; set; } = 6;
     }
 }

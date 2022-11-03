@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace blog.models.photo
 {
-    internal class PhotoCreate
+    public class PhotoCreate
     {
         public string ImageUrl { get; set; }
 

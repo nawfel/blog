@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace blog.models.blogComment
 {
-    internal class blogCommentCreate
+    public class blogCommentCreate
     {
         public int BlogCommentId { get; set; }
         public int? ParentBlogCommentId { get; set; }
@@ -16,7 +16,7 @@ namespace blog.models.blogComment
 
         [Required(ErrorMessage = "content is required")]
         [MinLength(10, ErrorMessage = "leat 5 char")]
-        [MaxLength(3000, ErrorMessage = "most 3000 char")]
+      
         public string Content { get; set; }
     }
 }
