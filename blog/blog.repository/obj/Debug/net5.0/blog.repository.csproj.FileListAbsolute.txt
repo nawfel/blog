@@ -1,0 +1,15 @@
+C:\Work\blog\blog\blog.repository\bin\Debug\net5.0\blog.repository.deps.json
+C:\Work\blog\blog\blog.repository\bin\Debug\net5.0\blog.repository.dll
+C:\Work\blog\blog\blog.repository\bin\Debug\net5.0\blog.repository.pdb
+C:\Work\blog\blog\blog.repository\bin\Debug\net5.0\blog.models.dll
+C:\Work\blog\blog\blog.repository\bin\Debug\net5.0\blog.models.pdb
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.csproj.AssemblyReference.cache
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.AssemblyInfoInputs.cache
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.AssemblyInfo.cs
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.csproj.CoreCompileInputs.cache
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.csproj.CopyComplete
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.dll
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\refint\blog.repository.dll
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\blog.repository.pdb
+C:\Work\blog\blog\blog.repository\obj\Debug\net5.0\ref\blog.repository.dll
