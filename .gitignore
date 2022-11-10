@@ -9,7 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-
+blog/blog/.vs/*
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -67,7 +67,6 @@ ScaffoldingReadMe.txt
 
 # StyleCop
 StyleCopReport.xml
-
 
 # Files built by Visual Studio
 *_i.c

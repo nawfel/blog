@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog", "blog\blog.csproj", "{86C313D8-1AD0-43CE-B8E8-D36E18EACF78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blog", "blog\blog.csproj", "{86C313D8-1AD0-43CE-B8E8-D36E18EACF78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog.models", "blog.models\blog.models.csproj", "{51978617-1A76-40DC-A5CC-F0818FB65D33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blog.models", "blog.models\blog.models.csproj", "{51978617-1A76-40DC-A5CC-F0818FB65D33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog.repository", "blog.repository\blog.repository.csproj", "{7850360A-C409-4AEC-90CC-6A201378F002}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blog.repository", "blog.repository\blog.repository.csproj", "{7850360A-C409-4AEC-90CC-6A201378F002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog.identity", "blog.identity\blog.identity.csproj", "{1B915F72-1ACD-478B-B54A-46A35277A098}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{7850360A-C409-4AEC-90CC-6A201378F002}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7850360A-C409-4AEC-90CC-6A201378F002}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7850360A-C409-4AEC-90CC-6A201378F002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B915F72-1ACD-478B-B54A-46A35277A098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B915F72-1ACD-478B-B54A-46A35277A098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B915F72-1ACD-478B-B54A-46A35277A098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B915F72-1ACD-478B-B54A-46A35277A098}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
