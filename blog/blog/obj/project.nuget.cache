@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gQonjXpBtGo2dpM8zEXnTcgO4WMH9auHhKY+5dwY3nOMi8pR5kTeN4Zk5rHlYJeGLLr9dR05IkXMKFMYFn0UjA==",
+  "dgSpecHash": "c2TwRbcqZvTuP4iP5XvUrzKrj6pgxfeW7ZH3CedF8rvh0if3wu8zUpe5/DcH1p5UEhFipZXzhxLmN4fC+zhI8A==",
   "success": true,
   "projectFilePath": "C:\\Work\\blog\\blog\\blog\\blog.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,8 @@
     "C:\\Users\\sghai\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\sghai\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
     "C:\\Users\\sghai\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
-    "C:\\Users\\sghai\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\sghai\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\sghai\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
