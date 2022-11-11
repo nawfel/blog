@@ -40,7 +40,7 @@ namespace blog.repository
             {
                 await connection.OpenAsync();
 
-                using (var multi = await connection.QueryMultipleAsync("Blog_All",
+                using (var multi = await connection.QueryMultipleAsync("Blog_GetAll",
                     new
                     {
                         OffSet = (blogPaging.Page - 1) * blogPaging.PageSize,
@@ -63,7 +63,9 @@ namespace blog.repository
             {
                 await connection.OpenAsync();
 
-                blogs = await connection.QueryAsync<Blog>("Blog_GetByUserId", new { ApplicationUserId = applicationUserId },
+                blogs = await connection.QueryAsync<Blog>(
+                    "Blog_GetByUserId",
+                    new { ApplicationUserId = applicationUserId },
                     commandType: CommandType.StoredProcedure);
             }
             return blogs.ToList();
@@ -85,13 +87,13 @@ namespace blog.repository
 
         public async Task<Blog> GetASync(int blogId)
         {
-           Blog blog;
+            Blog blog;
 
             using (var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection")))
             {
                 await connection.OpenAsync();
 
-                blog = await connection.QueryFirstOrDefaultAsync<Blog>("Blog_Get", new { BlogId= blogId},
+                blog = await connection.QueryFirstOrDefaultAsync<Blog>("Blog_Get", new { BlogId = blogId },
                     commandType: CommandType.StoredProcedure);
             }
             return blog;
@@ -115,8 +117,12 @@ namespace blog.repository
 
                 newBlogId = await connection.ExecuteScalarAsync<int>(
                     "Blog_Upsert",
-                    new { Blog
-                    = dataTable.AsTableValuedParameter("dbo.BlogType"),ApplicationUserId=applicationUserId },
+                    new
+                    {
+                        Blog
+                    = dataTable.AsTableValuedParameter("dbo.BlogType"),
+                        ApplicationUserId = applicationUserId
+                    },
                     commandType: CommandType.StoredProcedure);
             }
             newBlogId = newBlogId ?? blogCreate.BlogId;

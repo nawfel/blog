@@ -33,7 +33,7 @@ namespace blog.repository
 
             return affectedRows;
         }
-        
+
         public async Task<List<Photo>> GetAllByUserIdAsync(int applicationUserId)
         {
             IEnumerable<Photo> photos;
@@ -76,7 +76,11 @@ namespace blog.repository
 
                 newPhotoId = await connection.ExecuteScalarAsync<int>(
                     "Photo_Insert",
-                    new { Photo = dataTable.AsTableValuedParameter("dbo.PhotoType") },
+                    new
+                    {
+                        Photo = dataTable.AsTableValuedParameter("dbo.PhotoType"),
+                        ApplicationUserId = applicationUserId
+                    },
                     commandType: CommandType.StoredProcedure);
             }
             Photo photo = await GetAsync(newPhotoId);
