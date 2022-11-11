@@ -13,6 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.31" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.17" />
   </ItemGroup>
 
@@ -24,7 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\blog.identity\blog.identity.csproj" />
     <ProjectReference Include="..\blog.models\blog.models.csproj" />
+    <ProjectReference Include="..\blog.repository\blog.repository.csproj" />
+    <ProjectReference Include="..\blog.services\blog.services.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

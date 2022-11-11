@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace blog.models.blogComment
 {
-    public class BlogComment :blogCommentCreate
+    public class BlogComment :BlogCommentCreate
     {
         public int Username { get; set; }
 

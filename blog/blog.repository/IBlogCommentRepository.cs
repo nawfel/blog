@@ -9,7 +9,7 @@ namespace blog.repository
 {
     public interface IBlogCommentRepository
     {
-        public Task<BlogComment> UpsertAsync(blogCommentCreate blogCommentCreate, int ApplicationUserId);
+        public Task<BlogComment> UpsertAsync(BlogCommentCreate blogCommentCreate, int ApplicationUserId);
         public Task<List<BlogComment>> GetAllAsync(int blogId);
         public Task<BlogComment> GetAsync(int blogCommentId);
         public Task<int> DeleteAsync(int blogCommentId);

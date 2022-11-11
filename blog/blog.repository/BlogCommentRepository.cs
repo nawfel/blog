@@ -60,7 +60,7 @@ namespace blog.repository
             return blogComment;
         }
 
-        public async Task<BlogComment> UpsertAsync(blogCommentCreate blogCommentCreate, int ApplicationUserId)
+        public async Task<BlogComment> UpsertAsync(BlogCommentCreate blogCommentCreate, int ApplicationUserId)
         {
             var dataTable = new DataTable();
             dataTable.Columns.Add("BlogCommentId", typeof(int));

@@ -4,6 +4,73 @@
     "C:\\Work\\blog\\blog\\blog\\blog.csproj": {}
   },
   "projects": {
+    "C:\\Work\\blog\\blog\\blog.identity\\blog.identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\blog\\blog\\blog.identity\\blog.identity.csproj",
+        "projectName": "blog.identity",
+        "projectPath": "C:\\Work\\blog\\blog\\blog.identity\\blog.identity.csproj",
+        "packagesPath": "C:\\Users\\sghai\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\blog\\blog\\blog.identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sghai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Work\\blog\\blog\\blog.models\\blog.models.csproj": {
+                "projectPath": "C:\\Work\\blog\\blog\\blog.models\\blog.models.csproj"
+              },
+              "C:\\Work\\blog\\blog\\blog.repository\\blog.repository.csproj": {
+                "projectPath": "C:\\Work\\blog\\blog\\blog.repository\\blog.repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Work\\blog\\blog\\blog.models\\blog.models.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -64,14 +131,14 @@
         }
       }
     },
-    "C:\\Work\\blog\\blog\\blog\\blog.csproj": {
+    "C:\\Work\\blog\\blog\\blog.repository\\blog.repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\blog\\blog\\blog\\blog.csproj",
-        "projectName": "blog",
-        "projectPath": "C:\\Work\\blog\\blog\\blog\\blog.csproj",
+        "projectUniqueName": "C:\\Work\\blog\\blog\\blog.repository\\blog.repository.csproj",
+        "projectName": "blog.repository",
+        "projectPath": "C:\\Work\\blog\\blog\\blog.repository\\blog.repository.csproj",
         "packagesPath": "C:\\Users\\sghai\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\blog\\blog\\blog\\obj\\",
+        "outputPath": "C:\\Work\\blog\\blog\\blog.repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sghai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,6 +171,179 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\blog\\blog\\blog.services\\blog.services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\blog\\blog\\blog.services\\blog.services.csproj",
+        "projectName": "blog.services",
+        "projectPath": "C:\\Work\\blog\\blog\\blog.services\\blog.services.csproj",
+        "packagesPath": "C:\\Users\\sghai\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\blog\\blog\\blog.services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sghai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Work\\blog\\blog\\blog.models\\blog.models.csproj": {
+                "projectPath": "C:\\Work\\blog\\blog\\blog.models\\blog.models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.25.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.25.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\blog\\blog\\blog\\blog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\blog\\blog\\blog\\blog.csproj",
+        "projectName": "blog",
+        "projectPath": "C:\\Work\\blog\\blog\\blog\\blog.csproj",
+        "packagesPath": "C:\\Users\\sghai\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\blog\\blog\\blog\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sghai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Work\\blog\\blog\\blog.identity\\blog.identity.csproj": {
+                "projectPath": "C:\\Work\\blog\\blog\\blog.identity\\blog.identity.csproj"
+              },
+              "C:\\Work\\blog\\blog\\blog.models\\blog.models.csproj": {
+                "projectPath": "C:\\Work\\blog\\blog\\blog.models\\blog.models.csproj"
+              },
+              "C:\\Work\\blog\\blog\\blog.repository\\blog.repository.csproj": {
+                "projectPath": "C:\\Work\\blog\\blog\\blog.repository\\blog.repository.csproj"
+              },
+              "C:\\Work\\blog\\blog\\blog.services\\blog.services.csproj": {
+                "projectPath": "C:\\Work\\blog\\blog\\blog.services\\blog.services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.31, )"
+            },
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[5.0.17, )"
