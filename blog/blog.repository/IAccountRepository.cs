@@ -10,6 +10,7 @@ namespace blog.repository
     {
         public Task<IdentityResult> CreateAsync(ApplicationUserIdentity user, CancellationToken cancellationToken);
         public Task<ApplicationUserIdentity> GetByUsernameAsync(string normalizedname, CancellationToken cancellationToken);
+      public  Task<ApplicationUserIdentity> FindByEmailAsync(string normalizedEmail, CancellationToken cancellationToken);
     }
 }
 

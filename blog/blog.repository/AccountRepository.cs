@@ -61,5 +61,25 @@ namespace blog.repository
 
             return applicationUser;
         }
+
+        public async Task<ApplicationUserIdentity> FindByEmailAsync(string email, CancellationToken cancellationToken)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+
+            ApplicationUserIdentity applicationUser;
+            using (var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection")))
+
+            {
+                await connection.OpenAsync(cancellationToken);
+                applicationUser = await connection.QuerySingleOrDefaultAsync<ApplicationUserIdentity>(
+                       "Account_GetByEmail", new { Email = email },
+                       commandType: CommandType.StoredProcedure
+                       );
+            }
+
+            return applicationUser;
+        }
+
+       
     }
 }

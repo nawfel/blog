@@ -38,7 +38,7 @@ namespace blog.web.Controllers
             return Ok(blogcomment);
         }
         [Authorize]
-        [HttpDelete("{blogCommentId")]
+        [HttpDelete("{blogCommentId}")]
         public async Task<ActionResult<int>> Delete (int blogCommentId)
         {
             int applicationUserId = int.Parse(User.Claims.First(x => x.Type == JwtRegisteredClaimNames.NameId).Value);

@@ -36,9 +36,9 @@ namespace blog.identity
            //nothing to dispose
         }
 
-        public Task<ApplicationUserIdentity> FindByEmailAsync(string normalizedEmail, CancellationToken cancellationToken)
+        public async Task<ApplicationUserIdentity> FindByEmailAsync(string normalizedEmail, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await _accountRepository.FindByEmailAsync(normalizedEmail, cancellationToken);
         }
 
         public Task<ApplicationUserIdentity> FindByIdAsync(string userId, CancellationToken cancellationToken)

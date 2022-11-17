@@ -17,7 +17,7 @@ namespace blog.services
         private readonly string _issuer;
         public TokenService(IConfiguration config)
         {
-            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt;Key"]));
+            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]));
             _issuer = config["Jwt:Issuer"];
         }
         public string CreateToken(ApplicationUserIdentity user)

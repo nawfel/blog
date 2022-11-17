@@ -32,6 +32,11 @@ namespace blog.web.Controllers
                 Email = applicationUserCreate.Email,
                 FullName = applicationUserCreate.Fullname,
             };
+            var userExists = await  _userManager.FindByEmailAsync(applicationUserCreate.Email);;
+            if(userExists != null)
+            {
+                return BadRequest("user email already exists!");
+            }
             var result = await _userManager.CreateAsync(applicationUserIdentity, applicationUserCreate.Password);
 
             if (result.Succeeded)
