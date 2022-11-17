@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blog.models", "blog.models\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blog.repository", "blog.repository\blog.repository.csproj", "{7850360A-C409-4AEC-90CC-6A201378F002}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog.identity", "blog.identity\blog.identity.csproj", "{1B915F72-1ACD-478B-B54A-46A35277A098}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blog.identity", "blog.identity\blog.identity.csproj", "{1B915F72-1ACD-478B-B54A-46A35277A098}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog.services", "blog.services\blog.services.csproj", "{82F14A8E-5F0A-4038-A28D-C431D3C383E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blog.services", "blog.services\blog.services.csproj", "{82F14A8E-5F0A-4038-A28D-C431D3C383E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
